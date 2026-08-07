@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> sophia | portfolio</title>
+
+  <link rel="icon" type="image/png" href="web_logo1.png">
+  <meta name="description"
+    content="A minimal, elegant portfolio highlighting projects in digital design and software development, styled in refined navy blue and cream.">
+
+  <link rel="stylesheet" href="style.css?v=1.1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="grid-bg"></div>
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+
+    <div class="container">
+      <div class="linkedin-topright">
+        <a href="https://www.linkedin.com/in/sophia-czarina-villamor-a69223325/"><i
+            class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title">Hi! I'm soph</h1>
+        <p class="hero-subtitle">
+          <b>Sophia Villamor </b> is an aspiring Front-End Developer and Software Engineer from De La Salle
+          University - Dasmariñas. Driven by a passion for building functional, responsive, and high-performance
+          applications, her technical expertise spans frontend development, UI/UX design, and smart software
+          integration. She thrives at the intersection of logic and design, continuously exploring new frameworks and
+          methodologies to deliver optimized, user-centric web and mobile experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-work">View My Work</a>
+          <a href="#contact" class="btn btn-outline" id="hero-btn-contact">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Cream Theme) -->
+  <section class="section tech-div" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-text reveal">
+        <div class="section-header">
+          <h2 class="tech-title" id="tech-title" style="text-align: center;"> technologies.</h2>
+          <div class="skills-container">
+            <br>
+            <ul class="skills-list" id="skills-list-group">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React Native</li>
+              <li>Tailwind CSS</li>
+              <li>Figma</li>
+              <li>SQL</li>
+              <li>UI/UX Design</li>
+              <li>Power BI</li>
+              <li>Python</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Cream Theme) -->
+  <section class="section projects" id="projects" aria-labelledby="projects-title">
+
+    <h2 class="section-title" id="projects-title" style="text-align: center">projects.</h2>
+    <br><br><br>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card reveal card-1">
+        <div class="project-card-info">
+          <h3 class="project-card-title">Pocket Salon</h3>
+          <div class="project-tags">
+            <span class="project-tag">React Native</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <p class="project-card-desc">
+            Pocket Salon is a mobile application that detects hair type and damage through live image detection and
+            recommends personalized hair products, routines, and remedies.
+          </p>
+        </div>
+        <a href="Pocket Salon Demo Video.mp4" target="_blank" class="project-card-link" id="project-link-1">View
+          Demo</a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal card-2">
+        <div class="project-card-info">
+          <h3 class="project-card-title">Portfolio</h3>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <p class="project-card-desc">
+            Sophia's portfolio is a curated collection which features the projects she has accomplished.
+          </p>
+        </div>
+        <a href="#" class="project-card-link" id="project-link-2">View Project</a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal card-3">
+        <div class="project-card-info">
+          <h3 class="project-card-title">The Coffee Journal</h3>
+          <div class="project-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">UI/UX Design</span>
+          </div>
+          <p class="project-card-desc">
+            A coffee-themed journal application designed to allow users to record their coffee experiences, rate them,
+            as
+            well as
+            recommend coffee finds to other users.
+          </p>
+        </div>
+        <a href="https://www.figma.com/proto/lre0tXrXSywqYd3mUwrJkh/Portfolio-Draft?node-id=14-2&t=qym6obFnFxEn50Cq-1"
+          class="project-card-link" id="project-link-3">View Design</a>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal card-4">
+        <div class="project-card-info">
+          <h3 class="project-card-title">Philippine Marine Litter Monitoring Data Dashboard</h3>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+          </div>
+          <p class="project-card-desc">
+            A data-driven Power BI dashboard analyzing marine litter trends in the Philippines, visualizing key
+            indicators to support environmental monitoring and decision-making.
+          </p>
+        </div>
+        <a href="Villamor_PowerBiVisualization.pbix" class="project-card-link" id="project-link-4">Download File</a>
+      </article>
+    </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-info reveal">
+        <div class="section-header">
+          <h2 class="section-title" id="contact-title" style="text-align: center;"> Let's connect!
+          </h2>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          <div class="container footer-content">
+            <ul class="social-links">
+              <li><a href="https://github.com/serinaayay" id="social-link-github"><i
+                    class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sophia-czarina-villamor-a69223325/" id="social-link-linkedin"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+
+        <!-- JavaScript for Scroll & Menu Effects -->
+        <script>
+
+          // 3. Scroll Reveal Animation using Intersection Observer
+          const revealElements = document.querySelectorAll('.reveal');
+
+          const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+          });
+
+          revealElements.forEach(element => {
+            revealObserver.observe(element);
+          });
+
+          window.addEventListener('mousemove', (e) => {
+            document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+            document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+          });
+
+        </script>
+      </div>
+    </div>
+  </section>
+  <script src="animations.js"></script>
+</body>
+
+</html>
