@@ -699,6 +699,15 @@ header.scrolled .nav-container {
   background-repeat: no-repeat;
 }
 
+.card-5::after {
+  background-image:
+    linear-gradient(135deg, rgba(14, 23, 52, 0.92) 0%, rgba(10, 15, 38, 0.88) 100%),
+    url('PesoVault.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 36px rgba(17, 24, 68, 0.22);
