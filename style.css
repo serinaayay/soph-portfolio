@@ -14,7 +14,7 @@
   /* Medium navy for highlights */
   --color-navy-light: #3066BE;
   /* Bright accent blue */
-  --color-cream-bg: #F9F6F0;
+  --color-cream-bg: #FFF1E4;
   /* Rich warm cream background */
   --color-cream-card: #FFFFFF;
   /* Pure white/soft cream for contrast */
@@ -496,8 +496,14 @@ header.scrolled .nav-container {
   font-size: 1.1rem;
 }
 
+.tech-div .section-header {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
 .skills-container {
   margin-top: var(--spacing-md);
+  width: 100%;
 }
 
 .skills-title {
@@ -506,23 +512,75 @@ header.scrolled .nav-container {
   margin-bottom: var(--spacing-sm);
 }
 
+.skills-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: skills-scroll 28s linear infinite;
+}
+
+.skills-marquee:hover .skills-track {
+  animation-play-state: paused;
+}
+
+@keyframes skills-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  flex-wrap: nowrap;
+  gap: 0.85rem;
+  padding-right: 0.85rem;
   list-style: none;
-  justify-content: center;
+  align-items: center;
 }
 
 .skills-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  white-space: nowrap;
   background-color: var(--color-cream-accent);
   color: var(--color-navy-dark);
   border: 2px solid #FBF5DD;
   border-radius: 15px;
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1.05rem;
   font-size: 1.1rem;
   font-weight: 500;
+  line-height: 1.2;
   transition: var(--transition-fast);
+}
+
+.tech-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15em;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.tech-icon-svg {
+  width: 1.15em;
+  height: 1.15em;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -535,6 +593,33 @@ header.scrolled .nav-container {
   background-color: #4B5694;
   color: #FBF5DD;
   transform: translateY(-3px);
+}
+
+.skills-list li:hover .tech-icon {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .skills-track {
+    animation: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .skills-list[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .about-visual {
